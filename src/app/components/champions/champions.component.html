@@ -1,0 +1,15 @@
+<!-- <app-home></app-home> -->
+<div class="m-5">
+    <h1><strong>Estos son los campeones que existen en LOL</strong></h1>
+    <div class="cards m-4" *ngFor="let champ of champs">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]="champ.image" [alt]="champ.nombre">
+            <div class="card-body">
+              <h5 class="card-title">{{ champ.nombre }}</h5>
+              <p class="card-text">{{ champ.historia | slice:0:100 }}{{'...'}}</p>
+              <a href="#" class="btn btn-primary">Leer más</a>
+            </div>
+          </div>
+    </div>
+</div>
+<!-- <app-footer></app-footer> -->
